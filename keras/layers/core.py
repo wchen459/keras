@@ -670,7 +670,7 @@ class Dense(Layer):
 
         if self.initial_weights is not None:
             self.set_weights(self.initial_weights)
-            del self.initial_weights
+            self.initial_weights = None
 
     @property
     def output_shape(self):
